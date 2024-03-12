@@ -1,0 +1,14 @@
+name: {{name.snakeCase()}}_application
+description: "Application logic for {{name.snakeCase()}}."
+version: 0.0.1
+homepage:
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  {{name.snakeCase()}}_domain:
+    path: ../domain
+  {{name.snakeCase()}}_infrastructure:
+    path: ../infrastructure
+  mediatr: ^0.2.0

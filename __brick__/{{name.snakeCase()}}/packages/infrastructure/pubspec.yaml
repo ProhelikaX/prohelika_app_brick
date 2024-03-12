@@ -1,0 +1,16 @@
+name: {{name.snakeCase()}}_infrastructure
+description: "Infrastructure logic for {{name.snakeCase()}}"
+version: 0.0.1
+homepage:
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  {{name.snakeCase()}}_domain:
+    path: ../domain
+  get_it: ^7.6.7
+  logger: ^2.1.0
+  dio: ^5.4.1
+  connectivity_plus: ^5.0.2
